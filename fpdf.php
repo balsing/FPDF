@@ -1036,6 +1036,7 @@ function Output($dest='', $name='', $isUTF8=false)
 
 protected function _dochecks()
 {
+	return;
 	// Check mbstring overloading
 	if(ini_get('mbstring.func_overload') & 2)
 		$this->Error('mbstring overloading must be disabled');
